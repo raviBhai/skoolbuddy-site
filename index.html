@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SkoolBuddy — Never miss a school deadline</title>
+    <meta
+      name="description"
+      content="A private, shared deadline tracker for parents. Both parents see every form, fee, PTM, and school trip — together."
+    />
+    <style>
+      :root {
+        --purple: #6750a4;
+        --purple-dark: #4f378b;
+        --purple-light: #eaddff;
+        --text: #1c1b1f;
+        --muted: #605d66;
+        --bg: #fffbfe;
+        --card: #ffffff;
+        --border: #e0dee3;
+        --warn: #f59e0b;
+      }
+      * { box-sizing: border-box; }
+      body {
+        margin: 0;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto,
+          sans-serif;
+        color: var(--text);
+        background: var(--bg);
+        line-height: 1.55;
+      }
+      header {
+        background: linear-gradient(180deg, var(--purple) 0%, var(--purple-dark) 100%);
+        color: white;
+        padding: 64px 24px 80px;
+        text-align: center;
+      }
+      .logo {
+        width: 96px;
+        height: 96px;
+        background: white;
+        border-radius: 48px;
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 56px;
+        margin-bottom: 24px;
+      }
+      h1 {
+        font-size: 44px;
+        margin: 0 0 12px;
+        letter-spacing: -0.5px;
+      }
+      .tag {
+        font-size: 18px;
+        opacity: 0.85;
+        margin: 0 0 32px;
+      }
+      .cta {
+        display: inline-block;
+        background: white;
+        color: var(--purple);
+        font-weight: 700;
+        padding: 14px 32px;
+        border-radius: 999px;
+        text-decoration: none;
+        font-size: 16px;
+        box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+      }
+      .cta:hover { transform: translateY(-1px); }
+      main {
+        max-width: 880px;
+        margin: 0 auto;
+        padding: 56px 24px;
+      }
+      h2 {
+        font-size: 26px;
+        margin: 0 0 16px;
+      }
+      section { margin-bottom: 56px; }
+      .features {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .feature {
+        background: var(--card);
+        border: 1px solid var(--border);
+        padding: 20px;
+        border-radius: 16px;
+      }
+      .feature h3 {
+        margin: 0 0 6px;
+        font-size: 16px;
+        color: var(--purple-dark);
+      }
+      .feature p {
+        margin: 0;
+        font-size: 14px;
+        color: var(--muted);
+      }
+      .shots {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 16px;
+      }
+      .shot {
+        aspect-ratio: 9 / 19;
+        background: var(--purple-light);
+        border-radius: 24px;
+        border: 1px solid var(--border);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--purple-dark);
+        font-weight: 600;
+        font-size: 13px;
+      }
+      ol {
+        background: var(--card);
+        border: 1px solid var(--border);
+        border-radius: 16px;
+        padding: 20px 24px 20px 44px;
+      }
+      ol li { margin-bottom: 12px; }
+      ol li:last-child { margin-bottom: 0; }
+      code {
+        background: var(--purple-light);
+        padding: 2px 6px;
+        border-radius: 4px;
+        font-size: 13px;
+        color: var(--purple-dark);
+      }
+      .note {
+        background: #fff8e6;
+        border: 1px solid var(--warn);
+        border-left: 4px solid var(--warn);
+        padding: 14px 16px;
+        border-radius: 8px;
+        font-size: 14px;
+        color: #7a4a00;
+      }
+      .privacy {
+        font-size: 14px;
+        color: var(--muted);
+      }
+      footer {
+        text-align: center;
+        padding: 32px 24px 48px;
+        color: var(--muted);
+        font-size: 13px;
+        border-top: 1px solid var(--border);
+      }
+      footer a { color: var(--purple-dark); }
+      @media (max-width: 600px) {
+        h1 { font-size: 34px; }
+        .features { grid-template-columns: 1fr; }
+        .shots { grid-template-columns: 1fr 1fr; }
+        .shots .shot:nth-child(3) { display: none; }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="logo">🎒</div>
+      <h1>SkoolBuddy</h1>
+      <p class="tag">Never miss a school deadline.</p>
+      <a class="cta" href="#download">Get the app</a>
+    </header>
+
+    <main>
+      <section>
+        <h2>What it does</h2>
+        <p>
+          A private, shared list for the things schools throw at parents —
+          permission slips, fee dates, PTMs, sports day kits, costume days,
+          school trips. Both parents add and see every deadline. Each phone
+          reminds you the day before and two days before.
+        </p>
+      </section>
+
+      <section>
+        <h2>Why parents like it</h2>
+        <div class="features">
+          <div class="feature">
+            <h3>Two parents, one list</h3>
+            <p>Sign in with Google, share a 4-letter invite code with your co-parent. Real-time sync.</p>
+          </div>
+          <div class="feature">
+            <h3>Reminders on both phones</h3>
+            <p>Each phone schedules its own 8 AM ping the day before and two days before. Works offline.</p>
+          </div>
+          <div class="feature">
+            <h3>Recurring deadlines</h3>
+            <p>"Sports kit every Wednesday" — set once, app keeps generating future occurrences.</p>
+          </div>
+          <div class="feature">
+            <h3>Calendar at a glance</h3>
+            <p>See every deadline laid out on a month grid, colour-coded by tag.</p>
+          </div>
+          <div class="feature">
+            <h3>Private to your family</h3>
+            <p>No one outside your linked parents can see your data — not even us. Backed by Firebase.</p>
+          </div>
+          <div class="feature">
+            <h3>No subscription. No ads.</h3>
+            <p>Free to use. Built and maintained by a parent who needed it.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2>Screenshots</h2>
+        <div class="shots">
+          <div class="shot">Add screenshot 1</div>
+          <div class="shot">Add screenshot 2</div>
+          <div class="shot">Add screenshot 3</div>
+        </div>
+        <p class="privacy" style="margin-top:8px;">
+          Replace these placeholders by adding image files to the repo and
+          pointing them here.
+        </p>
+      </section>
+
+      <section id="download">
+        <h2>Download</h2>
+        <p>
+          Tap the button below on your Android phone to download the APK.
+        </p>
+        <p>
+          <a class="cta" href="REPLACE_WITH_APK_URL">⬇ Download APK</a>
+        </p>
+        <p class="privacy">
+          Android only for now. iOS coming if there's interest.
+        </p>
+      </section>
+
+      <section>
+        <h2>How to install</h2>
+        <ol>
+          <li>
+            Tap <strong>Download APK</strong> above. Your browser will ask
+            where to save it — pick <strong>Downloads</strong>.
+          </li>
+          <li>
+            Open <strong>Files</strong> or <strong>My Files</strong> →
+            Downloads → tap the <code>skoolbuddy.apk</code>.
+          </li>
+          <li>
+            Android will ask how you'd like to open it. Choose
+            <strong>Package installer</strong> (not "App market").
+          </li>
+          <li>
+            If you see <em>"Install blocked"</em> or <em>"Unknown sources"</em>,
+            tap <strong>Settings</strong> in the popup and toggle
+            <strong>Allow from this source</strong> for your file manager or
+            browser. Go back and try the install again.
+          </li>
+          <li>
+            Tap <strong>Install</strong>. The icon appears in your app drawer.
+          </li>
+          <li>
+            Open SkoolBuddy → sign in with Google → add your child or paste
+            an invite code from your co-parent.
+          </li>
+        </ol>
+
+        <div class="note" style="margin-top:16px;">
+          <strong>One more thing — keep reminders working.</strong> Long-press
+          the SkoolBuddy icon → App info → Battery → set to
+          <strong>Unrestricted</strong>. Without this, some Androids
+          (Xiaomi, Oppo, Realme, OnePlus, Samsung) will silently kill the
+          8 AM reminders to save power.
+        </div>
+      </section>
+
+      <section>
+        <h2>Privacy</h2>
+        <p class="privacy">
+          We use Google Sign-In so we never see your password. Your data —
+          children's names, deadline titles, due dates — lives in Firebase
+          and is readable only by you and the parent you explicitly invite.
+          We don't sell or share data with anyone. There is no advertising
+          and no third-party analytics beyond what Firebase provides for
+          basic operation.
+        </p>
+      </section>
+    </main>
+
+    <footer>
+      Built by a parent who got tired of forgetting school deadlines.
+      <br />
+      Questions? Email
+      <a href="mailto:REPLACE_WITH_YOUR_EMAIL">REPLACE_WITH_YOUR_EMAIL</a>.
+    </footer>
+  </body>
+</html>
