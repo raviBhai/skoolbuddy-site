@@ -105,16 +105,14 @@
         gap: 16px;
       }
       .shot {
+        width: 100%;
+        height: auto;
         aspect-ratio: 9 / 19;
+        object-fit: cover;
         background: var(--purple-light);
         border-radius: 24px;
         border: 1px solid var(--border);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--purple-dark);
-        font-weight: 600;
-        font-size: 13px;
+        display: block;
       }
       ol {
         background: var(--card);
@@ -155,8 +153,14 @@
       @media (max-width: 600px) {
         h1 { font-size: 34px; }
         .features { grid-template-columns: 1fr; }
-        .shots { grid-template-columns: 1fr 1fr; }
-        .shots .shot:nth-child(3) { display: none; }
+        .shots {
+          grid-template-columns: repeat(3, 80%);
+          gap: 12px;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          padding-bottom: 8px;
+        }
+        .shots .shot { scroll-snap-align: center; }
       }
     </style>
   </head>
