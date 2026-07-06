@@ -56,15 +56,6 @@
         opacity: 0.85;
         margin: 0 0 24px;
       }
-      .demo-video {
-        width: 100%;
-        max-width: 260px;
-        border-radius: 20px;
-        display: block;
-        margin: 0 auto 20px;
-        background: #000;
-        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
-      }
       .cta {
         display: inline-block;
         background: white;
@@ -175,15 +166,6 @@
       <div class="logo">🎒</div>
       <h1>SkoolBuddy</h1>
       <p class="tag">Never miss a school deadline.</p>
-      <video
-        class="demo-video"
-        controls
-        muted
-        playsinline
-        preload="metadata"
-      >
-        <source src="demo.mp4" type="video/mp4" />
-      </video>
       <a class="cta" href="#download">Get the app ↓</a>
     </header>
 
@@ -213,15 +195,19 @@
         <div class="features">
           <div class="feature">
             <h3>Two parents, one list</h3>
-            <p>Sign in with Google, share a 4-letter invite code with your co-parent. Real-time sync.</p>
+            <p>Sign in with Google, share an invite code with your co-parent. Real-time sync across both phones.</p>
           </div>
           <div class="feature">
             <h3>Reminders on both phones</h3>
-            <p>Each phone schedules its own 8 AM ping the day before and two days before. Works offline.</p>
+            <p>Push notifications two days before, the day before, and the morning of — to both parents, automatically.</p>
           </div>
           <div class="feature">
             <h3>Recurring deadlines</h3>
             <p>"Sports kit every Wednesday" — set once, app keeps generating future occurrences.</p>
+          </div>
+          <div class="feature">
+            <h3>Attachments</h3>
+            <p>Snap the school circular or PDF and attach it to the deadline — both parents can open it later without hunting.</p>
           </div>
           <div class="feature">
             <h3>Calendar at a glance</h3>
@@ -248,51 +234,21 @@
       </section>
 
       <section id="download">
-        <h2>Download &amp; install</h2>
+        <h2>Get the app</h2>
 
         <p style="text-align:center; margin: 8px 0 12px;">
-          <a class="cta" href="https://github.com/raviBhai/skoolbuddy-site/releases/download/v1.0.0/skoolbuddy.apk">⬇ Download APK</a>
+          <a class="cta" href="https://play.google.com/store/apps/details?id=com.skoolbuddyapp.parents">▶ Get it on Google Play</a>
         </p>
         <p class="privacy" style="text-align:center;">
           Android only for now. iOS coming if there's interest.
         </p>
 
-        <h3 style="margin-top:32px; font-size:18px;">How to install</h3>
-        <ol>
-          <li>
-            Tap <strong>Download APK</strong> above on your Android phone.
-            The browser saves it to <strong>Downloads</strong>.
-          </li>
-          <li>
-            Open <strong>Files</strong> or <strong>My Files</strong> →
-            Downloads → tap <code>skoolbuddy.apk</code>.
-          </li>
-          <li>
-            Android asks how to open it. Choose
-            <strong>Package installer</strong> (not "App market").
-          </li>
-          <li>
-            If you see <em>"Install blocked"</em> or
-            <em>"Unknown sources"</em>, tap <strong>Settings</strong> in the
-            popup and toggle <strong>Allow from this source</strong> for
-            your file manager or browser. Go back and try again.
-          </li>
-          <li>
-            Tap <strong>Install</strong>. The SkoolBuddy icon appears in
-            your app drawer.
-          </li>
-          <li>
-            Open SkoolBuddy → sign in with Google → add your child, or
-            paste an invite code from your co-parent.
-          </li>
-        </ol>
-
         <div class="note" style="margin-top:16px;">
-          <strong>One more thing — keep reminders working.</strong> Long-press
+          <strong>Keep reminders working.</strong> After install, long-press
           the SkoolBuddy icon → App info → Battery → set to
           <strong>Unrestricted</strong>. Without this, some Androids
-          (Xiaomi, Oppo, Realme, OnePlus, Samsung) will silently kill the
-          8 AM reminders to save power.
+          (Xiaomi, Oppo, Realme, OnePlus, Samsung) will silently delay or
+          drop the morning reminders to save power.
         </div>
       </section>
 
